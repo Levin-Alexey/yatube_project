@@ -1,4 +1,5 @@
 import django
+
 """
 Django settings for yatube project.
 
