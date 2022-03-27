@@ -1,10 +1,15 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.template import loader
+
+
 # Create your views here.
 # Главная страница
 def index(request):
-    return HttpResponse('Главная страница')
+    template = 'posts/index.html'
+    return render(request, template)
 
-# Страница со списком отфильтрованных групп
+
 def group_posts(request, slug):
-    return HttpResponse('Список групп')
+    template = 'posts/group_list.html'
+    return render(request, template)
