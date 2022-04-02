@@ -24,5 +24,3 @@ class Post(models.Model):
         null=True,
         on_delete=models.CASCADE
     )
-
-
